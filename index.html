@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KURD CYBER PRO</title>
+<style>
+:root{--bg:#07111f;--panel:#122238;--text:#eaf2ff;--green:#39e6a0;--muted:#a9bad0}
+.light{--bg:#eef3f8;--panel:#fff;--text:#132238;--green:#087d55;--muted:#52657a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.9}
+header{padding:28px 16px;text-align:center;background:linear-gradient(130deg,#061526,#123c48)}
+header h1{color:#39e6a0;font-size:32px;margin:0}
+header p{color:#d3e8ed}
+nav{position:sticky;top:0;background:var(--panel);padding:12px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;z-index:2}
+a{color:var(--green);text-decoration:none}
+nav a{font-weight:bold}
+button,input{font:inherit}
+button{background:var(--green);color:#07111f;border:0;padding:9px 15px;border-radius:9px;cursor:pointer;font-weight:bold}
+main{max-width:1050px;margin:auto;padding:18px}
+.hero,.card{background:var(--panel);padding:20px;border-radius:15px;margin:18px 0}
+.hero{text-align:center;border:1px solid var(--green)}
+h2,h3{color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}
+.card{margin:0;border:1px solid #53677b44}
+.card p{color:var(--muted)}
+input{width:100%;padding:13px;border-radius:9px;border:1px solid #63758b;background:var(--panel);color:var(--text);margin:10px 0 18px}
+pre{direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;background:#030a13;color:#8fffc7;padding:13px;border-radius:9px;overflow:auto}
+.small{font-size:14px;color:var(--muted)}
+section{scroll-margin-top:75px;margin:35px 0}
+footer{text-align:center;padding:25px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+<h1>🛡️ KURD CYBER PRO</h1>
+<p>پلاتفۆرمی فێربوونی سایبەر سیکیوریتی بە زمانی کوردی</p>
+<p>فێربە، تاقی بکەرەوە، خۆت و تۆڕەکەت بپارێزە</p>
+<button onclick="theme()">گۆڕینی ڕەنگ</button>
+</header>
+
+<nav>
+<a href="#home">سەرەتا</a>
+<a href="#termux">Termux</a>
+<a href="#linux">Linux</a>
+<a href="#network">Network</a>
+<a href="#cyber">Cyber</a>
+<a href="#python">Python</a>
+<a href="#server">Server Protection</a>
+</nav>
+
+<main>
+<section id="home" class="hero">
+<h2>بەخێربێیت بۆ KURD CYBER PRO</h2>
+<p>لە سفرەوە دەست بە فێربوونی تەکنەلۆژیا و پاراستنی تۆڕ بکە.</p>
+<p>ئەم پلاتفۆرمە بۆ فێربوونی یاسایی و پاراستنی سیستەمەکانە.</p>
+</section>
+
+<input id="search" placeholder="گەڕان بەدوای وانە و ئامراز..." oninput="searchCards()">
+
+<section>
+<h2>📚 بەشەکانی فێربوون</h2>
+<div class="grid" id="cards">
+<div class="card"><h3>📱 Termux</h3><p>فێربوونی فەرمانەکانی Termux لە مۆبایل.</p><a href="#termux">بچۆ بۆ وانەکان ←</a></div>
+<div class="card"><h3>🐧 Linux</h3><p>بنەماکانی سیستەمی Linux.</p><a href="#linux">بچۆ بۆ وانەکان ←</a></div>
+<div class="card"><h3>🌐 Network</h3><p>IP و DNS و بنەماکانی تۆڕ.</p><a href="#network">بچۆ بۆ وانەکان ←</a></div>
+<div class="card"><h3>🔐 Cyber Security</h3><p>پاراستنی زانیاری و هەژمارەکان.</p><a href="#cyber">بچۆ بۆ وانەکان ←</a></div>
+<div class="card"><h3>🐍 Python</h3><p>دەستپێکردنی پرۆگرامسازی Python.</p><a href="#python">بچۆ بۆ وانەکان ←</a></div>
+<div class="card"><h3>🛡️ Server Protection</h3><p>فێربوونی پاراستنی سێرڤەر و DDoS.</p><a href="#server">بچۆ بۆ وانەکان ←</a></div>
+</div>
+</section>
+
+<section id="termux">
+<h2>📱 Termux Tools</h2>
+<div class="grid">
+<div class="card"><h3>پەکێجەکان نوێ بکەرەوە</h3><pre>pkg update && pkg upgrade</pre><button onclick="copy('pkg update && pkg upgrade')">Copy</button></div>
+<div class="card"><h3>دامەزراندنی Git</h3><pre>pkg install git</pre><button onclick="copy('pkg install git')">Copy</button></div>
+<div class="card"><h3>دامەزراندنی Python</h3><pre>pkg install python</pre><button onclick="copy('pkg install python')">Copy</button></div>
+<div class="card"><h3>دامەزراندنی Curl</h3><pre>pkg install curl</pre><button onclick="copy('pkg install curl')">Copy</button></div>
+<div class="card"><h3>زانیاری یارمەتی</h3><pre>termux-info</pre><button onclick="copy('termux-info')">Copy</button></div>
+<div class="card"><h3>شوێنی ئێستا</h3><pre>pwd</pre><button onclick="copy('pwd')">Copy</button></div>
+</div>
+</section>
+
+<section id="linux">
+<h2>🐧 Linux Basics</h2>
+<div class="grid">
+<div class="card"><h3>بینینی فایلەکان</h3><pre>ls -la</pre><button onclick="copy('ls -la')">Copy</button></div>
+<div class="card"><h3>گۆڕینی فۆڵدەر</h3><pre>cd folder</pre><button onclick="copy('cd folder')">Copy</button></div>
+<div class="card"><h3>دروستکردنی فۆڵدەر</h3><pre>mkdir myfolder</pre><button onclick="copy('mkdir myfolder')">Copy</button></div>
+<div class="card"><h3>خوێندنەوەی فایل</h3><pre>cat file.txt</pre><button onclick="copy('cat file.txt')">Copy</button></div>
+</div>
+</section>
+
+<section id="network">
+<h2>🌐 Network Tools</h2>
+<div class="grid">
+<div class="card"><h3>پشکنینی DNS</h3><pre>nslookup example.com</pre><button onclick="copy('nslookup example.com')">Copy</button></div>
+<div class="card"><h3>پشکنینی پەیوەندی</h3><pre>ping -c 4 example.com</pre><button onclick="copy('ping -c 4 example.com')">Copy</button></div>
+<div class="card"><h3>زانیاری دۆمەین</h3><pre>whois example.com</pre><p class="small">بۆ دۆمەینێک کە مافی پشکنینت هەیە.</p><button onclick="copy('whois example.com')">Copy</button></div>
+<div class="card"><h3>پشکنینی HTTP</h3><pre>curl -I https://example.com</pre><button onclick="copy('curl -I https://example.com')">Copy</button></div>
+</div>
+</section>
+
+<section id="cyber">
+<h2>🔐 Cyber Security</h2>
+<div class="card">
+<h3>بنەما گرنگەکان</h3>
+<ul>
+<li>وشەی نهێنی بەهێز بەکاربهێنە.</li>
+<li>دوو هەنگاوی پشتڕاستکردنەوە (MFA) چالاک بکە.</li>
+<li>سیستەم و بەرنامەکان نوێ بکەرەوە.</li>
+<li>بەستەری گومانلێکراو مەکەرەوە.</li>
+<li>تەنها لەسەر سیستەمێک کار بکە کە مۆڵەتت هەیە.</li>
+</ul>
+</div>
+<div class="card">
+<h3>Ethical Hacking چییە؟</h3>
+<p>پشکنینی ئاسایشی سیستەم بە مۆڵەت، بۆ دۆزینەوە و چاککردنی لاوازییەکان.</p>
+</div>
+</section>
+
+<section id="python">
+<h2>🐍 Python Basics</h2>
+<div class="card">
+<h3>یەکەم کۆدی Python</h3>
+<pre>print("Hello Kurdish Cyber!")</pre>
+<button onclick="copy('print(&quot;Hello Kurdish Cyber!&quot;)')">Copy</button>
+</div>
+<div class="card">
+<h3>گۆڕاو</h3>
+<pre>name = "Kurd"
+print(name)</pre>
+<button onclick="copy('name = &quot;Kurd&quot;\\nprint(name)')">Copy</button>
+</div>
+</section>
+
+<section id="server">
+<h2>🛡️ Server Protection</h2>
+<div class="card">
+<h3>DDoS چییە؟</h3>
+<p>DDoS هێرشێکە کە بە داواکاریی زۆر سێرڤەر قەرەباڵغ دەکات و دەکرێت خزمەتگوزارییەکە بەردەست نەبێت.</p>
+</div>
+<div class="card">
+<h3>1. Cloudflare</h3>
+<p>Cloudflare خزمەتگوزاریی پاراستنی ترافیک و DDoS و WAF پێشکەش دەکات.</p>
+<a href="https://www.cloudflare.com/">سەردانی Cloudflare بکە</a>
+</div>
+<div class="card">
+<h3>2. Firewall</h3>
+<p>تەنها پۆرت و خزمەتگوزاریی پێویست ڕێگەپێدراو بن. دەستگەیشتن بە بەڕێوەبەر سنووردار بکە.</p>
+</div>
+<div class="card">
+<h3>3. Rate Limiting</h3>
+<p>ژمارەی داواکارییەکان بۆ هەر بەکارهێنەرێک سنووردار بکە بۆ کەمکردنەوەی بەکارهێنانی خراپ.</p>
+</div>
+<div class="card">
+<h3>4. HTTPS</h3>
+<p>گواستنەوەی داتا بە HTTPS بپارێزە و SSL/TLS بەکاربهێنە.</p>
+</div>
+<div class="card">
+<h3>5. Backup و Logs</h3>
+<p>کۆپی پارێزراوی داتا هەڵبگرە و تۆمارەکانی سێرڤەر بەردەوام بپشکنە.</p>
+</div>
+<div class="card">
+<h3>پشکنینی ئاسایشی سێرڤەر</h3>
+<ul>
+<li>نوێکردنەوەی سیستەم</li>
+<li>وشەی نهێنی بەهێز و MFA</li>
+<li>Firewall و سنووردارکردنی پۆرت</li>
+<li>پاراستنی کۆپی داتا</li>
+<li>چاودێریکردنی ترافیک و ئاگادارکردنەوەکان</li>
+</ul>
+</div>
+<p class="small">ئەم بەشە ڕێنمایی فێرکارییە و خۆی هیچ پاراستنێکی ڕاستەوخۆ لەسەر سێرڤەرەکەت جێبەجێ ناکات.</p>
+</section>
+</main>
+
+<footer>
+<p>KURD CYBER PRO © 2026</p>
+<p>فێربوون بۆ پاراستن، نەک زیانگەیاندن.</p>
+</footer>
+
+<script>
+function theme(){
+ document.body.classList.toggle("light");
+}
+function copy(value){
+ if(navigator.clipboard && window.isSecureContext){
+  navigator.clipboard.writeText(value).then(()=>alert("کۆپی کرا!")).catch(()=>alert("کۆپی نەکرا؛ بە دەستی کۆپی بکە."));
+ }else{
+  const t=document.createElement("textarea");
+  t.value=value;
+  document.body.appendChild(t);
+  t.select();
+  document.execCommand("copy");
+  t.remove();
+  alert("کۆپی کرا!");
+ }
+}
+function searchCards(){
+ const q=document.getElementById("search").value.toLowerCase();
+ document.querySelectorAll("#cards .card").forEach(card=>{
+  card.style.display=card.innerText.toLowerCase().includes(q)?"":"none";
+ });
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

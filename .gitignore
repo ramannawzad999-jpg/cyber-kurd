@@ -1,0 +1,8 @@
+cyber_kurd.db
+*.db
+__pycache__/
+*.pyc
+app-old.py
+app-before-expanded.py
+cyber_kurd_expanded.py
+.env

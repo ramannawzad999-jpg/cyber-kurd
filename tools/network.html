@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network Tools | KURD CYBER PRO</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌐 ئامرازەکانی تۆڕ</h1>
+  <p>فێربوونی بنەماکانی تۆڕ و پاراستنی ئینتەرنێت</p>
+  <a href="../index.html">🏠 گەڕانەوە بۆ سەرەتا</a>
+</header>
+
+<main>
+
+<section>
+<h2>١. زانینی IP ـی ئامێر</h2>
+<p>بۆ بینینی IP ـی ناوخۆیی مۆبایل:</p>
+<pre><code>ip addr</code></pre>
+<button onclick="copyCommand('ip addr')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٢. تاقیکردنەوەی ئینتەرنێت</h2>
+<p>بۆ تاقیکردنەوەی پەیوەندی ئینتەرنێت:</p>
+<pre><code>ping -c 4 1.1.1.1</code></pre>
+<button onclick="copyCommand('ping -c 4 1.1.1.1')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٣. زانیاریی DNS</h2>
+<p>بۆ بینینی زانیاریی DNS:</p>
+<pre><code>cat $PREFIX/etc/resolv.conf</code></pre>
+<button onclick="copyCommand('cat $PREFIX/etc/resolv.conf')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٤. دامەزراندنی ئامرازەکانی تۆڕ</h2>
+<p>دامەزراندنی curl و wget:</p>
+<pre><code>pkg install curl wget</code></pre>
+<button onclick="copyCommand('pkg install curl wget')">کۆپی بکە</button>
+
+<p>دامەزراندنی DNS utilities:</p>
+<pre><code>pkg install dnsutils</code></pre>
+<button onclick="copyCommand('pkg install dnsutils')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٥. زانینی زانیاریی دۆمەین</h2>
+<p>بۆ نموونە، زانیاریی دۆمەینی example.com ببینە:</p>
+<pre><code>nslookup example.com</code></pre>
+<button onclick="copyCommand('nslookup example.com')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٦. بنەماکانی پاراستنی تۆڕ</h2>
+<ul>
+<li>وشەی نهێنیی بەهێز بەکاربهێنە.</li>
+<li>ڕاوتەرەکەت بەردەوام نوێ بکەرەوە.</li>
+<li>بە لینکە گومانلێکراوەکان مەچۆ.</li>
+<li>تەنها تۆڕی خۆت یان تۆڕی ڕێگەپێدراو تاقی بکەرەوە.</li>
+</ul>
+</section>
+
+</main>
+
+<script src="../js/app.js"></script>
+</body>
+</html>
+
+

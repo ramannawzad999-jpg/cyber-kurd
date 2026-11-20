@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linux Academy | KURD CYBER PRO</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+<h1>🐧 LINUX ACADEMY</h1>
+<p>فێربوونی Linux بە زمانی کوردی</p>
+<a href="../index.html">🏠 گەڕانەوە بۆ سەرەتا</a>
+</header>
+
+<main>
+
+<section>
+<h2>١. Linux چییە؟</h2>
+<p>
+Linux سیستەمێکی کارپێکردنە کە لە کۆمپیوتەر، سێرڤەر
+و ئامێرە جۆراوجۆرەکان بەکاردێت.
+</p>
+</section>
+
+<section>
+<h2>٢. فەرمانە بنەڕەتییەکان</h2>
+
+<p>بینینی شوێنی ئێستا:</p>
+<pre><code>pwd</code></pre>
+<button onclick="copyCommand('pwd')">کۆپی بکە</button>
+
+<p>بینینی فایل و فۆڵدەرەکان:</p>
+<pre><code>ls -la</code></pre>
+<button onclick="copyCommand('ls -la')">کۆپی بکە</button>
+
+<p>دروستکردنی فۆڵدەر:</p>
+<pre><code>mkdir learning</code></pre>
+<button onclick="copyCommand('mkdir learning')">کۆپی بکە</button>
+
+<p>دروستکردنی فایل:</p>
+<pre><code>touch notes.txt</code></pre>
+<button onclick="copyCommand('touch notes.txt')">کۆپی بکە</button>
+
+<p>خوێندنەوەی ناوەڕۆکی فایل:</p>
+<pre><code>cat notes.txt</code></pre>
+<button onclick="copyCommand('cat notes.txt')">کۆپی بکە</button>
+
+<p>پاککردنەوەی شاشە:</p>
+<pre><code>clear</code></pre>
+<button onclick="copyCommand('clear')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٣. بەڕێوەبردنی پاکەتەکان</h2>
+
+<p>نوێکردنەوەی پاکەتەکان لە Debian:</p>
+<pre><code>sudo apt update</code></pre>
+<button onclick="copyCommand('sudo apt update')">کۆپی بکە</button>
+
+<p>دامەزراندنی Python:</p>
+<pre><code>sudo apt install python3</code></pre>
+<button onclick="copyCommand('sudo apt install python3')">کۆپی بکە</button>
+
+<p>بینینی وەشانی Python:</p>
+<pre><code>python3 --version</code></pre>
+<button onclick="copyCommand('python3 --version')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٤. زانیاریی سیستەم</h2>
+
+<p>زانیاریی وەشانی Linux:</p>
+<pre><code>uname -a</code></pre>
+<button onclick="copyCommand('uname -a')">کۆپی بکە</button>
+
+<p>بینینی کاتی سیستەم:</p>
+<pre><code>date</code></pre>
+<button onclick="copyCommand('date')">کۆپی بکە</button>
+
+<p>بینینی بۆشایی دیسک:</p>
+<pre><code>df -h</code></pre>
+<button onclick="copyCommand('df -h')">کۆپی بکە</button>
+
+<p>بینینی بەکارهێنانی بیرگە:</p>
+<pre><code>free -h</code></pre>
+<button onclick="copyCommand('free -h')">کۆپی بکە</button>
+</section>
+
+<section>
+<h2>٥. پاراستنی Linux</h2>
+<ul>
+<li>سیستەمەکەت بەردەوام نوێ بکەرەوە.</li>
+<li>فەرمانێکی نەناسراو بەبێ تێگەیشتن جێبەجێ مەکە.</li>
+<li>وشەی نهێنیی بەهێز بەکاربهێنە.</li>
+<li>فایلە گرنگەکانت پاشەکەوت بکە.</li>
+<li>ئاگاداری فەرمانەکانی سڕینەوە بە.</li>
+</ul>
+</section>
+
+<section>
+<h2>٦. تاقیکردنەوەی خۆت</h2>
+<p>کام فەرمان شوێنی ئێستات پیشان دەدات؟</p>
+
+<button onclick="alert('هەوڵێکی باش بوو!')">ls</button>
+<button onclick="alert('وەڵامی دروست! pwd شوێنی ئێستات پیشان دەدات.')">pwd</button>
+<button onclick="alert('نەخێر، ئەمە ناوی بەکارهێنەر پیشان دەدات.')">whoami</button>
+</section>
+
+</main>
+
+<script src="../js/app.js"></script>
+</body>
+</html>
+
